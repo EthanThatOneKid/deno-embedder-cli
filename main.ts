@@ -10,6 +10,10 @@ import * as flags from "https://deno.land/std@0.185.0/flags/mod.ts";
  */
 export const FLAG_MAPPINGS = "mappings";
 
+if (import.meta.main) {
+  await doEmbed();
+}
+
 /**
  * doEmbed embeds the files.
  *
